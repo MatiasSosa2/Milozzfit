@@ -40,8 +40,8 @@ body {
 
 @media screen and (max-width: 768px) {
     .primera-imagen  {
-        width: 80%;
-        height: 40vh;
+        width: 90%;
+        height: 50vh;
     }
 }
 
