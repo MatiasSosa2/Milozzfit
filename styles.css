@@ -37,6 +37,17 @@ body {
 }
 
 
+
+@media screen and (max-width: 768px) {
+    .primera-imagen  {
+        width: 100%;
+        height: auto;
+        /* Si quieres hacerla más grande, puedes usar un valor más grande */
+        transform: scale(1.5);  /* Esto la agranda un 50% */
+    }
+}
+
+
 .primera-seccion h1 {
     font-weight: bold;
     color: beige;
