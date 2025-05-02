@@ -40,10 +40,8 @@ body {
 
 @media screen and (max-width: 768px) {
     .primera-imagen  {
-        width: 95%;
-        height: auto;
-        /* Si quieres hacerla más grande, puedes usar un valor más grande */
-        transform: scale(1.5);  /* Esto la agranda un 50% */
+        width: 80%;
+        height: 40vh;
     }
 }
 
@@ -61,6 +59,7 @@ body {
 .presentacion .titulo1{
     font-weight: bold;
     color: white;
+    font-style: italic;
 }
 
 .presentacion p {
@@ -70,6 +69,7 @@ body {
 .presentacion .titulo2 {
     color:e91d0e ;
     font-weight: bold;
+    font-style: italic;
 }
 
 .caja-presentacion {
