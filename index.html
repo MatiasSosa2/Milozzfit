@@ -26,10 +26,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
               <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-4">
                 <li class="nav-item">
-                  <a class="nav-link active text-white" href="#">Inicio</a>
+                  <a class="nav-link active text-white" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Calistenia</a>
+                  <a class="nav-link text-white" href="calistenia.html">Calistenia</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white" href="#">Personal Trainer</a>
@@ -48,23 +48,31 @@
           
       <section class="presentacion position-relative" data-aos="fade-left" style="background-color: #000;">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 position-relative text-center">
-              <!-- Imagen -->
+          <div class="row flex-column-reverse flex-md-row align-items-center">
+            
+            <!-- Imagen -->
+            <div class="col-md-6 position-relative imagen-con-overlay">
               <img src="Imagenes/lucas.jpg" alt="Presentación" class="img-fluid primera-imagen" />
+              <div class="overlay-sombra"></div>
       
-              <!-- Overlay de sombra en parte superior -->
-              <div class="position-absolute top-0 start-0 w-100" style="height: 80%; background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent); border-radius: 0.5rem 0.5rem 0 0;"></div>
-      
-              <!-- Títulos -->
-              <div class="position-absolute top-0 start-50 translate-middle-x mt-4 w-100 ">
-                <h1 class="display-6 titulo1" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.8);">DESAFIA TUS LIMITES</h1>
-                <h1 class="display-4 titulo2  fw-bold" style="color: #ff1100 ;">TRANSFORMA TU VIDA</h1>
+              <!-- Título superpuesto solo en móviles -->
+              <div class="titulos-superpuestos d-md-none col-12">
+                <h1 class="titulo1">DESAFIA TUS LIMITES</h1>
+                <h1 class="titulo2">TRANSFORMA TU VIDA</h1>
               </div>
             </div>
+      
+            <!-- Título lateral en escritorio -->
+            <div class="col-md-6 d-none d-md-block">
+              <h1 class="titulo1">DESAFIA TUS LIMITES</h1>
+              <h1 class="titulo2">TRANSFORMA TU VIDA</h1>
+            </div>
+      
           </div>
         </div>
       </section>
+      
+      
       <!-- Sección: Servicios -->
 <section class="py-5" id="second" data-aos="fade-right">    
   <div class="container text-center">
