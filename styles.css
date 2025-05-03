@@ -131,10 +131,13 @@ body {
     background-color: #1a1a1a;
     color: #f0f0f0;
   }
-  
+
   .servicio .card:hover {
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6) !important;
+    box-shadow: 0 0 40px 20px rgba(255, 0, 0, 0.6) !important;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
   }
+  
   
   /* Carrusel */
   .carrusel img {
