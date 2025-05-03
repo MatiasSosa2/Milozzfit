@@ -109,7 +109,7 @@ body {
 
   @media (max-width: 767px) {
     .img-movil {
-       width: 90vh;
+       width: 100vh;
        height: auto;
        margin-left: -145px;
        
@@ -118,7 +118,7 @@ body {
 
  @media (max-width: 767px) {
     .primera-imagen {
-       margin-top: -55px;
+       margin-top: -50px;
        
    }
  }
