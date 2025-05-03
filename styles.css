@@ -38,28 +38,9 @@ body {
     margin-right: 5vh;
   }
   
-  /* Imagen principal */
-  .primera-imagen {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    object-fit: cover;
-  }
   
-  @media screen and (max-width: 768px) {
-    .primera-imagen {
-      height: 50vh;
-    }
-  }
+  
 
-  @media screen and (min-width: 768px) {
-    .primera-imagen {
-      height: 90vh !important;
-      width: 100% !important;
-    }
-  }
-  
   /* Overlay de sombra sobre imagen */
   .overlay-sombra {
     position: absolute;
@@ -128,7 +109,7 @@ body {
 
   @media (max-width: 767px) {
     .img-movil {
-       width: 80vh;
+       width: 100vh;
        height: auto;
    }
  }
