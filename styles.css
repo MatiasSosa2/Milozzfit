@@ -128,7 +128,8 @@ body {
 
   @media (max-width: 767px) {
     .img-movil {
-       width: 100vh;
+       width: 80vh;
+       height: 70vh;
    }
  }
 
@@ -162,6 +163,12 @@ body {
   .servicio {
     height: 30vh;
   }
+
+  @media (max-width: 767px) {
+    .servicio {
+       height: 20vh;
+   }
+ }
   
   .contenedor-servicio {
     background-color: #1a1a1a;
