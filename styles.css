@@ -129,7 +129,7 @@ body {
   @media (max-width: 767px) {
     .img-movil {
        width: 80vh;
-       height: 70vh;
+       height: auto;
    }
  }
 
