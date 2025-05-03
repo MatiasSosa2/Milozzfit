@@ -109,7 +109,7 @@ body {
 
   @media (max-width: 767px) {
     .img-movil {
-       width: 100vh;
+       width: 90vh;
        height: auto;
        margin-left: -145px;
        
@@ -123,8 +123,7 @@ body {
    }
  }
 
-
-  
+ 
   /* Secciones generales */
   .primera-seccion h1 {
     font-weight: bold;
