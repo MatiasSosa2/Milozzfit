@@ -19,7 +19,7 @@ body {
 /* Altura en pantallas grandes */
 @media (min-width: 992px) {
   .barra-nav {
-    height: 15vh;
+
   }
 }
 
