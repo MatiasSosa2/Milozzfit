@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutinas Milozzfit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Milozzfit" class="logo" />
+    <h1>Rutinas Milozzfit</h1>
+  </header>
+  <main class="login-container">
+    <section class="login-card" id="login-section">
+      <h2>Acceso para Clientes</h2>
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <button onclick="loginUser()">Ingresar</button>
+      <p id="login-message"></p>
+    </section>
+    <section id="user-section" class="hidden">
+      <h2>Bienvenido, <span id="user-name"></span></h2>
+      <p>Programa: <strong id="user-program"></strong></p>
+      <div id="calendar"></div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Milozzfit. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
