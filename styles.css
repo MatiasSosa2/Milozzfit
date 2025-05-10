@@ -16,12 +16,6 @@ body {
   top: 0;
 }
 
-/* Altura en pantallas grandes */
-@media (min-width: 992px) {
-  .barra-nav {
-
-  }
-}
 
 /* Estilo para los links de navegación */
 .nav-item .nav-link,
