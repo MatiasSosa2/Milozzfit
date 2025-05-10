@@ -1,0 +1,54 @@
+<!-- entrenador.html mejorado -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel del Entrenador - Milozzfit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Milozzfit</h1>
+  </header>
+
+  <main class="admin-container">
+    <section id="login-section" class="admin-login">
+      <h2>Acceso privado</h2>
+      <input type="text" id="adminUser" placeholder="Usuario" />
+      <input type="password" id="adminPass" placeholder="Contraseña" />
+      <button onclick="loginEntrenador()">Entrar</button>
+      <p id="login-message"></p>
+    </section>
+
+    <section id="admin-section" class="hidden admin-panel">
+      <h2>Agregar Cliente</h2>
+      <form onsubmit="agregarUsuario(); return false;">
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="text" id="apellido" placeholder="Apellido" required />
+        <input type="text" id="dni" placeholder="DNI" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <select id="programa">
+          <option value="Calistenia">Calistenia</option>
+          <option value="Personal Trainer">Personal Trainer</option>
+          <option value="Ambos">Ambos</option>
+        </select>
+        <select id="activo">
+          <option value="true">Activo</option>
+          <option value="false">Inactivo</option>
+        </select>
+        <button type="submit">Agregar Usuario</button>
+      </form>
+
+      <h2>Lista de Usuarios</h2>
+      <pre id="usuarios-json"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Milozzfit - Acceso exclusivo del entrenador</p>
+  </footer>
+
+  <script src="entrenador.js"></script>
+</body>
+</html>
