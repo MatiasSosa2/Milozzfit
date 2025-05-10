@@ -7,15 +7,17 @@
     </title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>      
     <header>
         <nav class="navbar navbar-expand-lg barra-nav">
           <div class="container-fluid">
             <!-- Marca a la izquierda -->
-            <a class="navbar-brand fw-bold fs-3 text-white nombre-marca" href="index.html">MILOZZFIT</a>
+            <a class="navbar-brand fw-bold fs-3 text-white nombre-marca" href="">MILOZZFIT</a>
       
             <!-- Botón hamburguesa para móvil -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,31 +48,68 @@
         </nav>
       </header>
           
-      <section class="presentacion position-relative" data-aos="fade-left" style="background-color: #000;">
+      <section class="super-hero-section text-light py-5" style="position: relative; font-family: 'Poppins', sans-serif;">
         <div class="container">
-          <div class="row flex-column-reverse flex-md-row align-items-center">
+          <div class="row justify-content-between align-items-center flex-column-reverse flex-lg-row">
             
+            <!-- Texto -->
+            <div class="col-lg-6 mt-4 mt-lg-0 text-center text-lg-start" data-aos="fade-right">
+              <h2 class="fw-bold mb-1 text-light" style="font-size: 2.5rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                DESAFÍA TUS LÍMITES,
+              </h2>
+              <h2 class="fw-bold mb-4" style="color: #f01c00; font-size: 2.8rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+                TRANSFORMA TU VIDA
+              </h2>
+      
+              <h3 class="fst-italic text-white mb-4" style="font-size: 1.34rem;">
+                “No es solo fitness. Es una transformación de vida.”
+              </h3>
+      
+              <!-- Beneficios -->
+              <ul class="list-unstyled text-white mb-4" style="font-size: 1.05rem;">
+                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;" data-aos="fade-left" data-aos-interval="3500"></i> Nutricionistas</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Rutina 100% personalizada</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Acompañamiento 24/7</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Comunidad Exclusiva</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> App Fitness</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Coaching en vivo</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Talleres de Nutrición</li>
+              </ul>
+      
+              <!-- Botón -->
+              <a href="#consultoria" class="btn btn-lg px-4 py-2 shadow-lg" style="background-color: #ff1100; color: white; transition: all 0.3s ease;" data-aos="zoom-in">
+                AGENDA UNA CONSULTORÍA GRATUITA *
+              </a>
+            </div>
+      
             <!-- Imagen -->
-            <div class="col-md-6 col-sm-12 justify-content-center">
-              <img src="../Imagenes/Lucas.jpeg" alt="Presentación" class="mb-5 col-sm-12 primera-imagen"/>
-            <div class="overlay-sombra"></div>
-
-              <!-- Título superpuesto solo en móviles -->
-              <div class="titulos-superpuestos d-md-none col-12">
-                <h1 class="titulo1">DESAFIA TUS LIMITES</h1>
-                <h1 class="titulo2">TRANSFORMA TU VIDA</h1>
+            <div class="col-lg-5 text-center mb-4 mb-lg-0" data-aos="fade-left">
+              <div class="image-box position-relative d-inline-block">
+                <div class="bg-accent-shadow position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle, rgba(240,28,0,0.3) 0%, transparent 70%); z-index: 1;"></div>
+                <img src="../Imagenes/Lucas.jpeg" alt="Entrenador" class="img-fluid rounded-4" style="z-index: 2; position: relative; transition: transform 0.3s ease;">
               </div>
             </div>
-      
-            <!-- Título lateral en escritorio -->
-            <div class="col-md-6 d-none d-md-block">
-              <h1 class="titulo1" style="font-size: 3em;">DESAFIA TUS LIMITES</h1>
-              <h1 class="titulo2" style="font-size: 3em;">TRANSFORMA TU VIDA</h1>
-            </div>
-      
           </div>
         </div>
+      
+        <!-- Fondo de partículas -->
+        <div id="particles-js"></div>
       </section>
+      
+      <!-- Extra CSS (opcional, pero recomendado) -->
+      <style>
+        .btn:hover {
+          background: linear-gradient(135deg, #ff1100, #ff6a00);
+          transform: scale(1.05);
+          box-shadow: 0 0 10px rgba(255, 17, 0, 0.4);
+        }
+      
+        .image-box img:hover {
+          transform: scale(1.03);
+        }
+      </style>
+    
+    
       
       
       <!-- Sección: Servicios -->
@@ -174,14 +213,6 @@
     <div class="position-absolute top-0 end-0 w-50 h-100" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 10; cursor: pointer;"></div>
 </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-  <script>
-    AOS.init({
-      duration: 2000,
-      once: true     
-    });
-  </script>
 
 <section class="py-5" >
   <div class="container" data-aos="flip-left">
@@ -235,14 +266,108 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 <script>
-  duration: 2000;
-  AOS.init(); 
+  AOS.init({
+    duration: 2200, // duración en milisegundos (más lento)
+    easing: 'ease-in-out', // transición más suave
+    once: false, // si querés que se animen solo una vez
+    delay: 100, // retardo opcional
+  });
+
+
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 60,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      color: {
+        value: "#ff0000"
+      },
+      shape: {
+        type: "circle",
+        stroke: {
+          width: 0,
+          color: "#000"
+        },
+        polygon: {
+          nb_sides: 5
+        },
+        image: {
+          src: "images/github.svg",
+          width: 100,
+          height: 100
+        }
+      },
+      opacity: {
+        value: 0.5,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false
+        }
+      },
+      size: {
+        value: 5,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 10,
+          size_min: 0.1,
+          sync: false
+        }
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ff0000",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200
+        }
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "repulse"
+        },
+        onclick: {
+          enable: true,
+          mode: "push"
+        },
+        resize: true
+      }
+    },
+    retina_detect: true
+  });
 </script>
+
+
+
 </body>
 
 </body>
