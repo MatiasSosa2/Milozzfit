@@ -28,7 +28,7 @@ body {
 @media (max-width: 991.98px) {
   .nav-item .nav-link,
   .nav-item .nav-link.active {
-    display: block;
+    
     margin: 1vh auto;
     padding: 1.2em 2em;
     border: 2px solid rgba(255, 255, 255, 0.4);
@@ -186,73 +186,67 @@ ul.list-unstyled .bi-check-circle-fill {
         padding-right: 15px;
     }
 }
+
+
+
+
 @media (max-width: 767.98px) {
-  .super-hero-section {
-    position: relative;
-    padding: 0;
-  }
-
-  .super-hero-section .image-box img {
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    object-position: center bottom;
-    filter: brightness(0.65);
-    border-radius: 0;
-  }
-
-  .mobile-text-overlay {
+  .mobile-overlay-text {
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: #fff;
-    z-index: 2;
-    width: 90%;
+    z-index: 5;
+    padding: 0 1rem;
   }
 
-  .mobile-text-overlay h2 {
+  .mobile-overlay-text .titulo1,
+  .mobile-overlay-text .titulo2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    color: white;
+    margin: 0;
+  }
+
+  .mobile-overlay-text .titulo1 {
+    font-size: 2rem;
+  }
+
+  .mobile-overlay-text .titulo2 {
     font-size: 2.2rem;
-    font-weight: 800;
-    margin-bottom: 0.3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-  }
-
-  .mobile-text-overlay h2:last-of-type {
     color: #ff3a1c;
-    font-size: 2.4rem;
-  }
-
-  .benefits-mobile {
-    background-color: #111;
-    padding: 2rem 1.2rem 3rem;
-    border-radius: 2rem 2rem 0 0;
-    margin-top: -4vh;
-    z-index: 3;
-    position: relative;
-  }
-
-  .benefits-mobile ul {
-    list-style: none;
-    padding-left: 0;
-    color: #fff;
-    font-size: 1rem;
-  }
-
-  .benefits-mobile li {
-    margin-bottom: 0.9rem;
-  }
-
-  .benefits-mobile .btn {
-    margin-top: 1.8rem;
-    width: 100%;
-    font-weight: 600;
-    font-size: 1.05rem;
-    padding: 0.95rem;
-    border-radius: 0.75rem;
+    margin-top: 0.3rem;
   }
 }
+
+
+@media (max-width: 767.98px) {
+  .img-mobile-up {
+    margin-bottom: 0 !important;
+    margin-top: -30vh;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .text-overlay {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .hero-img-mobile {
+    margin-top: -5rem;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain;
+     }
+}
+
+
 
 
 
