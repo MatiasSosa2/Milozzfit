@@ -100,15 +100,16 @@ body {
 
 /* Responsive: navbar en mobile */
 @media (max-width: 767.98px) {
-  .mobile-overlay-text {
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    z-index: 5;
-    padding: 0 1rem;
-  }
+.mobile-overlay-text {
+  position: absolute;
+  top: 80% !important;  /* Asegúrate de agregar !important */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 5;
+  padding: 0 1rem;
+}
+
 
   .mobile-overlay-text .titulo1,
   .mobile-overlay-text .titulo2 {
@@ -153,14 +154,27 @@ body {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .text-overlay {
     position: absolute;
-    top: 5%;
-    width: 100%;
-    z-index: 10;
+    top: 0% !important; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 5;
+    padding: 0 1rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 2.4rem; /* Ajusta el tamaño según sea necesario */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  }
+
+  .text-overlay h2:first-of-type {
+    font-size: 2.2rem;
   }
 }
+
 
 .super-hero-section {
   position: relative;
