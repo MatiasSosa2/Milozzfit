@@ -58,6 +58,19 @@ body {
   }
 }
 
+@media (max-width: 991.98px) {
+  /* Aumenta el espacio entre el botón de menú y los enlaces */
+  .navbar-collapse {
+    margin-top: 20px; /* Ajusta este valor según el espacio que desees */
+  }
+  
+  /* Puedes añadir también algún espacio adicional si lo deseas en el botón de hamburguesa */
+  .navbar-toggler {
+    margin-bottom: 10px; /* Ajusta este valor si lo necesitas */
+  }
+}
+
+
 /* Nombre de la marca */
 .nombre-marca {
   margin-left: 5vh;
