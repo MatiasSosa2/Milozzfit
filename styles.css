@@ -103,12 +103,18 @@ body {
 
 /* === RESPONSIVE NAVBAR === */
 @media (max-width: 991.98px) {
-  .nav-item .nav-link {
-    display: block;
-    text-align: center;
-    margin: 0.7rem auto;
-    background: var(--glass);
-    border: 1px solid var(--borde-suave);
+
+      .nav-link {
+    background-color: rgba(201, 15, 15, 0.911) !important;
+    color: #ffffff !important;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    border: 2px solid rgb(130, 182, 182) !important;
+    transition: all 0.3s ease;
+    text-align: center !important;
+    border-radius: 10px !important;
+    
   }
 
   .navbar-toggler {
