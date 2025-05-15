@@ -50,32 +50,41 @@
             </div>
           </nav>
        </header>
-            
+
+
 <section class="super-hero-section text-light py-5 position-relative" style="font-family: 'Poppins', sans-serif;">
   <div class="container">
-    <div class="row justify-content-between align-items-center flex-column-reverse flex-lg-row">
+    <div class="row flex-column-reverse flex-lg-row justify-content-between align-items-center">
 
-      <!-- Texto delante de la imagen -->
-       <div class="text-overlay d-lg-none text-center px-3">
-         <h2 class="fw-bold mb-1 text-light">DESAFÍA TUS LÍMITES,</h2>
-         <h2 class="fw-bold mb-3" style="color: #f01c00;">TRANSFORMA TU VIDA</h2>
-       </div>
-
-
-      <!-- Texto original (oculto en mobile) -->
+      <!-- Columna de texto (en ambos tamaños) -->
       <div class="col-lg-6 mt-4 mt-lg-0 text-center text-lg-start" data-aos="fade-right">
-        <div class="d-none d-lg-block">
-          <h2 class="fw-bold mb-1 text-light " style="font-size: 2.5rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            DESAFÍA TUS LÍMITES,
-          </h2>
-          <h2 class="fw-bold mb-4" style=" color: #f01c00; font-size: 2.8rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+
+        <!-- Imagen con texto superpuesto solo para MOBILE -->
+        <div class="d-block d-lg-none">
+          <div class="mobile-image-container">
+            <img src="Imagenes/Lucas.jpeg" alt="Entrenador" class="rounded-4 w-100" style="display: block;">
+            <div class="mobile-shadow rounded-4"></div>
+            <div class="mobile-text-overlay">
+              <h2 class="text-light">DESAFÍA TUS LÍMITES,</h2>
+              <h2 style="color: #f01c00;">TRANSFORMA TU VIDA</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto para desktop -->
+        <div class="d-none d-lg-block texto-superpuesto">
+          <h2 class="fw-bold mb-1 text-light texto-1">DESAFÍA TUS LÍMITES,</h2>
+          <h2 class="fw-bold mb-4" style="color: #f01c00; font-size: 2.8rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
             TRANSFORMA TU VIDA
           </h2>
         </div>
+
+        <!-- Frase común a ambos -->
         <h3 class="fst-italic text-white mb-4" style="font-size: 1.34rem;">
           No es solo fitness. Es una transformación de vida.
         </h3>
 
+        <!-- Lista de beneficios -->
         <ul class="list-unstyled text-white mb-4" style="font-size: 1.05rem;">
           <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Nutricionistas</li>
           <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Rutina 100% personalizada</li>
@@ -86,13 +95,14 @@
           <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Talleres de Nutrición</li>
         </ul>
 
-        <a href="#consultoria" class="btn btn-cta" >
+        <!-- Botón CTA -->
+        <a href="#consultoria" class="btn btn-cta">
           AGENDA UNA CONSULTORÍA GRATUITA 
-        </a> 
+        </a>
       </div>
 
-      <!-- Imagen -->
-      <div class="col-lg-5 text-center mb-lg-0 image-container" data-aos="fade-left">
+      <!-- Imagen para escritorio -->
+      <div class="col-lg-5 text-center mb-lg-0 d-none d-lg-block image-container" data-aos="fade-left">
         <div class="image-box position-relative d-inline-block">
           <div class="bg-accent-shadow position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle, rgba(240,28,0,0.3) 0%, transparent 70%); z-index: 1;"></div>
           <img src="Imagenes/Lucas.jpeg" alt="Entrenador" class="rounded-4 hero-img-mobile" style="width: 100%; height: auto; z-index: 2; position: relative; transition: transform 0.3s ease;">
@@ -105,6 +115,7 @@
   <!-- Fondo de partículas -->
   <div id="particles-js"></div>
 </section>
+
 
 
 
