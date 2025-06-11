@@ -9,13 +9,502 @@
   <meta name="keywords" content="calistenia, entrenador personal, fitness, transformación, salud, entrenamiento" />
   <meta name="robots" content="index, follow" />
   <title>Milozzfit - Transformá tu vida</title>
-  <link rel="stylesheet" href="style.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212 !important;
+      color: #eee;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+     /* Fuente Montserrat */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+  /* Container para el nombre */
+  .brand-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #f01c00, #e60023, #ff4d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.8rem;
+  user-select: none;
+  position: relative;
+  animation: slideIn 1s ease-out both;
+  margin-top: -10vh;
+}
+
+.brand-name::after {
+  content: '';
+  position: absolute;
+  bottom: -0.2em;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #f01c00, #ff6666);
+  border-radius: 2px;
+  opacity: 0.8;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.brand-name:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+  /* Línea horizontal roja */
+  .red-line {
+    position: absolute;
+    margin-top: 0.4rem; /* justo debajo del nombre de la marca */
+    left: 0;
+    width: 600vh;
+    height: 5px;
+    background: linear-gradient(90deg, #f01c00, #b30000);
+    box-shadow: 0 0 15px #f01c00;
+    margin-left: -30vh !important;
+  }
+
+
+
+  /* Texto destacado principal */
+  .lead.highlight {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #ddd;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    
+  }
+  .highlight-red {
+    color: #ff3b3b;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #7a0000;
+  }
+
+  /* Video wrapper con sombra fuerte */
+  .video-wrapper {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+      0 0 20px 6px rgba(255, 28, 0, 0.6),
+      inset 0 0 12px rgba(255, 28, 0, 0.35);
+    transition: box-shadow 0.3s ease;
+  }
+  .video-wrapper:hover {
+    box-shadow:
+      0 0 30px 10px rgba(255, 40, 40, 0.8),
+      inset 0 0 20px rgba(255, 40, 40, 0.6);
+  }
+
+  /* Urgente y potente */
+  .urgent-message {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ff2a2a;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 6px #7a0000;
+    margin-bottom: 1rem;
+  }
+
+  /* Texto secundario */
+  .secondary-text {
+    font-size: 1.15rem;
+    color: #bbb;
+    max-width: 650px;
+    margin: 0 auto 3rem auto;
+  }
+
+  /* Botón CTA */
+  .btn-cta {
+    background: linear-gradient(135deg, #f01c00, #cc0e00);
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 16px 60px;
+    border-radius: 50px;
+    box-shadow:
+      0 6px 25px rgba(255, 30, 30, 0.7);
+    border: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .btn-cta:hover {
+    background: linear-gradient(135deg, #ff3b3b, #e02020);
+    box-shadow:
+      0 8px 30px rgba(255, 59, 59, 0.9);
+  }
+
+  /* Efecto decorativo: líneas diagonales muy sutiles */
+  .decorative-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        rgba(255, 28, 0, 0.05) 0,
+        rgba(255, 28, 0, 0.05) 2px,
+        transparent 2px,
+        transparent 10px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        rgba(255, 28, 0, 0.05) 0,
+        rgba(255, 28, 0, 0.05) 2px,
+        transparent 2px,
+        transparent 10px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .brand-name {
+      font-size: 3.8rem;
+      letter-spacing: 0.2em;
+    }
+    .red-line {
+      height: 3px;
+      margin-bottom: 2rem;
+    }
+    .lead.highlight {
+      font-size: 1.1rem;
+    }
+    .urgent-message {
+      font-size: 1.7rem;
+    }
+    .secondary-text {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+    .btn-cta {
+      font-size: 1.1rem;
+      padding: 14px 42px;
+    }
+  }
+
+    /* Navbar */
+.navbar {
+  background: rgba(31, 30, 30, 0.85); /* oscuro semitransparente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease, top 0.3s ease;
+  z-index: 1100; /* más alto que la sección */
+  position: relative; /* por defecto */
+}
+
+/* Sticky: cuando haces scroll y el navbar se fija arriba */
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(31, 30, 30, 0.95); /* un poco más opaco cuando sticky */
+  box-shadow: 0 4px 15px rgba(240, 28, 0, 0.4); /* sombra roja para destacar */
+}
+
+/* Cuando el navbar se mueve "debajo" del botón CTA (en scroll arriba) */
+.navbar.below-cta {
+  position: fixed;
+  top: 6.5rem; /* justo debajo del botón CTA de la sección, ajusta si es necesario */
+  left: 0;
+  width: 100%;
+  background: rgba(31, 30, 30, 0.85);
+  box-shadow: 0 2px 8px rgb(240 28 0 / 0.25);
+}
+
+/* Marca */
+.navbar-brand {
+  color: #f01c00 !important;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+  color: #eee;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #f01c00;
+}
+
+    /* Hero */
+    .hero-section {
+      min-height: 90vh;
+      background: linear-gradient(180deg, rgba(240, 28, 0, 0.85) 30%, rgba(18, 18, 18, 0.9) 90%), url('Imagenes/Lucas.jpeg') center/cover no-repeat fixed;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      padding: 5rem 1rem;
+    }
+
+    .hero-text h1 {
+      font-weight: 800;
+      font-size: 3.8rem;
+      letter-spacing: 2px;
+      line-height: 1.1;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-text h2 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .btn-primario {
+      background-color: #f01c00;
+      border: none;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(240, 28, 0, 0.6);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: #c31500;
+      box-shadow: 0 6px 20px rgba(240, 28, 0, 0.9);
+    }
+
+    /* Beneficios */
+    .benefits-section {
+      background: #1f1f1f;
+      padding: 4rem 2rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+      box-shadow: 0 0 20px rgba(240, 28, 0, 0.2);
+    }
+
+    .benefits-section h3 {
+      color: #f01c00;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .benefits-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .benefits-list li {
+      font-size: 1.2rem;
+      padding-left: 2rem;
+      position: relative;
+      margin-bottom: 1rem;
+      color: #ddd;
+    }
+
+    .benefits-list li::before {
+      content: "\f058";
+      font-family: "bootstrap-icons";
+      position: absolute;
+      left: 0;
+      color: #f01c00;
+      font-weight: 900;
+    }
+
+    /* Servicios */
+    .services-section {
+      padding: 5rem 1rem;
+      background: #121212;
+    }
+
+    .service-card {
+      background: #1f1f1f;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgb(240 28 0 / 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #eee;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgb(240 28 0 / 0.6);
+    }
+
+    .service-card i {
+      font-size: 3.5rem;
+      color: #f01c00;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h4 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #f01c00;
+    }
+
+    .service-card p {
+      flex-grow: 1;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #ccc;
+    }
+
+    /* Testimonios */
+    .testimonials-section {
+      background: #1a1a1a;
+      padding: 5rem 2rem;
+      border-radius: 12px;
+      margin-top: 4rem;
+      box-shadow: 0 0 20px rgba(240, 28, 0, 0.25);
+      color: #eee;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .testimonial {
+      margin-bottom: 2rem;
+      font-style: italic;
+      font-size: 1.15rem;
+      position: relative;
+      padding-left: 3rem;
+    }
+
+    .testimonial::before {
+      content: "\201C";
+      font-size: 3rem;
+      position: absolute;
+      left: 0;
+      top: -10px;
+      color: #f01c00;
+      font-weight: 700;
+    }
+
+    .testimonial-footer {
+      margin-top: 0.5rem;
+      font-weight: 700;
+      color: #f01c00;
+    }
+
+    /* ¿Por qué elegir Milozzfit? */
+    .why-section {
+      padding: 5rem 1rem;
+      background: linear-gradient(45deg, #f01c00, #a80000);
+      color: white;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(240, 28, 0, 0.5);
+      margin-top: 5rem;
+    }
+
+    .why-section h2 {
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .why-section p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-weight: 600;
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      background: #121212;
+      color: #aaa;
+      padding: 3rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: #f01c00;
+      font-weight: 600;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      color: #c31500;
+      text-decoration: underline;
+    }
+
+    .whatsapp-flotante {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  z-index: 999;
+  display: inline-block;
+}
+
+
+.whatsapp-flotante img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: none;
+  outline: none;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.whatsapp-flotante img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+  </style>
   
 </head>
 

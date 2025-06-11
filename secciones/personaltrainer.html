@@ -10,8 +10,383 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style2.css">
-  
+  <style>
+     /* --- Base --- */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+      color: #eee;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* --- Navbar --- */
+    .navbar {
+  background: rgba(31, 30, 30, 0.85); /* oscuro semitransparente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease, top 0.3s ease;
+  z-index: 1100; /* más alto que la sección */
+  position: relative; /* por defecto */
+}
+
+/* Sticky: cuando haces scroll y el navbar se fija arriba */
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(31, 30, 30, 0.95); /* un poco más opaco cuando sticky */
+  box-shadow: 0 4px 15px rgba(240, 28, 0, 0.4); /* sombra roja para destacar */
+}
+
+/* Cuando el navbar se mueve "debajo" del botón CTA (en scroll arriba) */
+.navbar.below-cta {
+  position: fixed;
+  top: 6.5rem; /* justo debajo del botón CTA de la sección, ajusta si es necesario */
+  left: 0;
+  width: 100%;
+  background: rgba(31, 30, 30, 0.85);
+  box-shadow: 0 2px 8px rgb(240 28 0 / 0.25);
+}
+
+/* Marca */
+.navbar-brand {
+  color: #f01c00 !important;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+  color: #eee;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #f01c00;
+}
+    /* --- Hero --- */
+    .hero {
+      background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: clamp(3rem, 7vw, 5rem);
+      font-weight: 900;
+      color: #ff3b3f;
+      text-shadow: 0 0 30px rgba(255, 59, 63, 0.8);
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 650px;
+      margin-bottom: 2rem;
+      color: #eee;
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    .btn-cta {
+      background-color: #ff3b3f;
+      border: none;
+      padding: 18px 54px;
+      font-size: 1.3rem;
+      font-weight: 900;
+      border-radius: 50px;
+      box-shadow: 0 0 30px #ff3b3f, 0 0 50px #ff5e62;
+      letter-spacing: 0.12em;
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.35s ease;
+      user-select: none;
+    }
+    .btn-cta:hover {
+      background-color: #ff5e62;
+      box-shadow: 0 0 45px #ff5e62, 0 0 70px #ff3b3f;
+      transform: scale(1.08);
+    }
+
+    /* --- Glass container --- */
+    .glass-section {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: 24px;
+      padding: 5rem 3rem;
+      margin: 5rem auto;
+      max-width: 1100px;
+      box-shadow: 0 25px 50px rgba(255, 59, 63, 0.3);
+      color: #eee;
+    }
+    .section-title {
+      font-size: 2.6rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #ff3b3f;
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 5px;
+      margin: 1rem auto 0;
+      background: linear-gradient(90deg, #ff3b3f, #ff5e62);
+      border-radius: 5px;
+      box-shadow: 0 0 20px #ff3b3f;
+    }
+
+    /* --- Beneficios exclusivos --- */
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .benefit-item {
+      flex: 1 1 250px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      padding: 2rem 1.8rem;
+      box-shadow: 0 10px 25px rgba(255, 59, 63, 0.2);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: default;
+    }
+    .benefit-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(255, 59, 63, 0.4);
+    }
+    .benefit-icon {
+      font-size: 3.2rem;
+      color: #ff3b3f;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 3px #ff3b3f);
+    }
+    .benefit-title {
+      font-weight: 800;
+      font-size: 1.25rem;
+      margin-bottom: 0.8rem;
+      color: #ff5e62;
+    }
+    .benefit-desc {
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #ddd;
+    }
+
+    /* --- Plan de entrenamiento --- */
+    .training-plan {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 2rem;
+    }
+    .training-phase {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      padding: 2rem 2rem;
+      box-shadow: 0 10px 30px rgba(255, 59, 63, 0.25);
+      transition: transform 0.3s ease;
+    }
+    .training-phase:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(255, 59, 63, 0.45);
+    }
+    .training-phase h3 {
+      font-weight: 900;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #ff3b3f;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .training-phase p {
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* --- FAQ acordeón --- */
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      margin-bottom: 1rem;
+      box-shadow: 0 8px 20px rgba(255, 59, 63, 0.15);
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .faq-item:hover {
+      box-shadow: 0 12px 30px rgba(255, 59, 63, 0.35);
+    }
+    .faq-question {
+      font-weight: 700;
+      font-size: 1.15rem;
+      padding: 1.4rem 2rem;
+      color: #ff3b3f;
+      user-select: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question .icon {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+      pointer-events: none;
+    }
+    .faq-answer {
+      max-height: 0;
+      padding: 0 2rem;
+      font-size: 1rem;
+      color: #ddd;
+      line-height: 1.5;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      user-select: text;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding: 1rem 2rem 2rem;
+    }
+    .faq-item.active .faq-question .icon {
+      transform: rotate(45deg);
+    }
+
+    /* --- Testimonios --- */
+    .testimonials {
+      max-width: 1000px;
+      margin: 3rem auto 5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.2rem;
+    }
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      width: 320px;
+      box-shadow: 0 8px 20px rgba(255, 59, 63, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .testimonial-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(255, 59, 63, 0.4);
+    }
+    .testimonial-text {
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+    .testimonial-author {
+      font-weight: 900;
+      color: #ff3b3f;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* --- Logos --- */
+    .partner-logos {
+      max-width: 900px;
+      margin: 4rem auto 7rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      filter: grayscale(1);
+      opacity: 0.65;
+      transition: opacity 0.3s ease;
+    }
+    .partner-logos:hover {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+    .partner-logos img {
+      max-height: 50px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 3px #ff3b3f);
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #121212;
+      color: #eee;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-top: 2px solid #ff3b3f;
+      font-size: 0.9rem;
+    }
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    footer .footer-links a {
+      color: #ff3b3f;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    footer .footer-links a:hover {
+      color: #ff5e62;
+    }
+    footer small {
+      display: block;
+      margin-top: 1rem;
+      color: #aaa;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      .benefits {
+        flex-direction: column;
+        max-width: 100%;
+      }
+      .training-plan {
+        grid-template-columns: 1fr;
+      }
+      .testimonials {
+        flex-direction: column;
+        gap: 1.8rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
