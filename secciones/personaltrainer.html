@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plan Premium - Milozzfit</title>
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style2.css">
+  
+</head>
+
+<body>
+
+
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3 text-uppercase" href="#" aria-label="Ir a inicio Milozzfit">MILOZZFIT</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+        <ul class="navbar-nav gap-3 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link nav-custom" href="../index.html" tabindex="0">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-custom" href="calistenia.html" tabindex="0">Plan Personalizado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-custom" href="personaltrainer.html" tabindex="0">Plan Premium</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+</header>
+
+  <!-- Hero renovado -->
+  <section id="hero" class="hero" role="banner" aria-label="Sección principal de bienvenida">
+    <h1>Plan Premium</h1>
+    <p>El plan que te ayudará a superar tus límites y alcanzar tus metas fitness.</p>
+    <button class="btn-cta" onclick="document.getElementById('plan-premium').scrollIntoView({behavior:'smooth'})">Descubre el Plan Premium</button>
+  </section>
+
+  <!-- Beneficios renovados -->
+  <section id="beneficios" class="glass-section" aria-labelledby="beneficios-titulo">
+    <h2 id="beneficios-titulo" class="section-title">Beneficios Exclusivos</h2>
+    <div class="benefits" role="list">
+      <article class="benefit-item" role="listitem" tabindex="0">
+        <div class="benefit-icon" aria-hidden="true">💪</div>
+        <h3 class="benefit-title">Entrenamientos Personalizados</h3>
+        <p class="benefit-desc">Rutinas diseñadas según tu nivel y objetivos.</p>
+      </article>
+      <article class="benefit-item" role="listitem" tabindex="0">
+        <div class="benefit-icon" aria-hidden="true">🍎</div>
+        <h3 class="benefit-title">Planes Nutricionales</h3>
+        <p class="benefit-desc">Comidas saludables que se adaptan a ti.</p>
+      </article>
+      <article class="benefit-item" role="listitem" tabindex="0">
+        <div class="benefit-icon" aria-hidden="true">⏱️</div>
+        <h3 class="benefit-title">Soporte 24/7</h3>
+        <p class="benefit-desc">Asistencia continua para que nunca pierdas motivación.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Plan Premium (SECCIÓN QUE NO TOCO) -->
+  <section id="plan-premium" class="glass-section" aria-labelledby="plan-premium-titulo">
+    <h2 id="plan-premium-titulo" class="section-title">Plan Premium</h2>
+    <div style="display:flex; gap:2rem; flex-wrap: wrap; justify-content:center; align-items:center;">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Foto plan premium" style="border-radius: 20px; max-width: 350px; width: 100%; box-shadow: 0 10px 30px rgba(255, 59, 63, 0.4);" />
+      <div style="max-width: 500px; color: #eee;">
+        <p>El plan premium es tu mejor opción para alcanzar resultados rápidos y duraderos con asesoramiento profesional, seguimiento personalizado y acceso exclusivo a entrenamientos y contenido de alta calidad.</p>
+        <button class="btn-cta" onclick="alert('¡Gracias por elegir el Plan Premium!')">Quiero el Plan Premium</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas frecuentes (SECCIÓN QUE NO TOCO) -->
+  <section id="faq" class="glass-section" aria-labelledby="faq-titulo">
+    <h2 id="faq-titulo" class="section-title">Preguntas Frecuentes</h2>
+    <div class="faq-container" role="list">
+      <div class="faq-item" tabindex="0" role="listitem" aria-expanded="false" aria-controls="faq1-answer" id="faq1-question">
+        <div class="faq-question" aria-labelledby="faq1-question">
+          ¿Qué incluye el Plan Premium?
+          <span class="icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" id="faq1-answer" aria-labelledby="faq1-question" hidden>
+          El Plan Premium incluye entrenamientos personalizados, planes nutricionales, soporte 24/7 y acceso exclusivo a contenido premium.
+        </div>
+      </div>
+      <div class="faq-item" tabindex="0" role="listitem" aria-expanded="false" aria-controls="faq2-answer" id="faq2-question">
+        <div class="faq-question" aria-labelledby="faq2-question">
+          ¿Cómo puedo contratar el plan?
+          <span class="icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" id="faq2-answer" aria-labelledby="faq2-question" hidden>
+          Puedes contratarlo desde nuestra página web o contactando a nuestro equipo por WhatsApp o email.
+        </div>
+      </div>
+      <div class="faq-item" tabindex="0" role="listitem" aria-expanded="false" aria-controls="faq3-answer" id="faq3-question">
+        <div class="faq-question" aria-labelledby="faq3-question">
+          ¿Hay garantía de resultados?
+          <span class="icon" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-answer" id="faq3-answer" aria-labelledby="faq3-question" hidden>
+          Sí, te acompañamos para que logres tus objetivos. Sin embargo, el compromiso personal es fundamental.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer renovado -->
+  <footer id="contacto" role="contentinfo" aria-label="Información de contacto y pie de página">
+    <div class="footer-links">
+      <a href="mailto:contacto@milozzfit.com" aria-label="Enviar email a contacto">Email</a>
+      <a href="https://wa.me/1234567890" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WhatsApp</a>
+      <a href="#hero" aria-label="Volver al inicio">Inicio</a>
+    </div>
+    <small>© 2025 Milozzfit. Todos los derechos reservados.</small>
+  </footer>
+
+  <script>
+    // Script sencillo para abrir/cerrar FAQ
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('active');
+          i.setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-answer').hidden = true;
+        });
+        if (!isActive) {
+          item.classList.add('active');
+          item.setAttribute('aria-expanded', 'true');
+          item.querySelector('.faq-answer').hidden = false;
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

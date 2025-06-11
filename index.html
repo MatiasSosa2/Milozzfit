@@ -1,392 +1,327 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Transformá tu cuerpo y mente con Milozzfit. Entrenamiento personalizado, coaching, app exclusiva y mucho más.">
-      <meta name="author" content="Milozzfit">
-      <meta name="keywords" content="calistenia, entrenador personal, fitness, transformación, salud, entrenamiento">
-      <title>Milozzfit
-      </title>
-      <link rel="stylesheet" href="style.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Transformá tu cuerpo y mente con Milozzfit. Entrenamiento personalizado, coaching, app exclusiva y mucho más." />
+  <meta name="author" content="Milozzfit" />
+  <meta name="keywords" content="calistenia, entrenador personal, fitness, transformación, salud, entrenamiento" />
+  <meta name="robots" content="index, follow" />
+  <title>Milozzfit - Transformá tu vida</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  </head>
-  <body>      
-      <header>
-          <nav class="navbar navbar-expand-lg barra-nav">
-            <div class="container-fluid">
-              <!-- Marca a la izquierda -->
-              <a class="navbar-brand fw-bold fs-3 text-white nombre-marca" href="">MILOZZFIT</a>
-        
-              <!-- Botón hamburguesa para móvil -->
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="bi bi-list" style="font-size: 3rem; color: white; "></i>
-            </button>    
-        
-              <!-- Menú a la derecha -->
-              <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
-                <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-4">
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="calistenia.html">Calistenia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="personaltrainer.html">Personal Trainer</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white" href="packservicios.html">Pack de Servicios</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-       </header>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <section class="video-section text-white d-flex flex-column align-items-center justify-content-center" 
+         style="min-height: 100vh; background-color: #121212; padding: 6rem 2rem 5rem; position: relative; overflow: hidden;">
 
-<section class="super-hero-section text-light py-5 position-relative" style="font-family: 'Poppins', sans-serif;">
-  <div class="container">
-    <div class="row flex-column-reverse flex-lg-row justify-content-between align-items-center">
+  <div class="container text-center position-relative" style="max-width: 900px; z-index: 2;">
 
-      <!-- Columna de texto (en ambos tamaños) -->
-      <div class="col-lg-6 mt-4 mt-lg-0 text-center text-lg-start" data-aos="fade-right">
+    <!-- Nombre de la marca con estilo premium -->
+    <h1 class="brand-name ml-0" aria-label="Milozzfit Premium Coaching">MILOZZFIT</h1>
 
-        <!-- Imagen con texto superpuesto solo para MOBILE -->
-        <div class="d-block d-lg-none">
-          <div class="mobile-image-container">
-            <img src="Imagenes/Lucas.jpeg" alt="Entrenador" class="rounded-4 w-100" style="display: block;">
-            <div class="mobile-shadow rounded-4"></div>
-            <div class="mobile-text-overlay">
-              <h2 class="text-light">DESAFÍA TUS LÍMITES,</h2>
-              <h2 style="color: #f01c00;">TRANSFORMA TU VIDA</h2>
-            </div>
-          </div>
-        </div>
+    <!-- Línea horizontal roja full width -->
+    <div class="red-line" aria-hidden="true"></div>
 
-        <!-- Texto para desktop -->
-        <div class="d-none d-lg-block texto-superpuesto">
-          <h2 class="fw-bold mb-1 text-light texto-1">DESAFÍA TUS LÍMITES,</h2>
-          <h2 class="fw-bold mb-4" style="color: #f01c00; font-size: 2.8rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-            TRANSFORMA TU VIDA
-          </h2>
-        </div>
+    <!-- Subtítulo destacado -->
+    <p class="lead highlight" style="margin-top: 4rem; margin-bottom: 3rem;">
+      <strong>Transformá tu cuerpo y salud en 90 días</strong> con el método exclusivo de <span class="highlight-red">Milozz</span>, entrenador certificado.<br>
+      Asesorías <u>100% virtuales</u>, con seguimiento real y resultados comprobados.
+    </p>
 
-        <!-- Frase común a ambos -->
-        <h3 class="fst-italic text-white mb-4" style="font-size: 1.34rem;">
-          No es solo fitness. Es una transformación de vida.
-        </h3>
-
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-white mb-4" style="font-size: 1.05rem;">
-          <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Nutricionistas</li>
-          <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Rutina 100% personalizada</li>
-          <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Acompañamiento 24/7</li>
-          <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Comunidad Exclusiva</li>
-          <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> App Fitness</li>
-          <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Coaching en vivo</li>
-          <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: #f01c00;"></i> Talleres de Nutrición</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#consultoria" class="btn btn-cta">
-          AGENDA UNA CONSULTORÍA GRATUITA 
-        </a>
+    <!-- Video embebido con borde premium -->
+    <div class="video-wrapper mb-5 shadow-strong rounded-4">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" title="Presentación Milozzfit" allowfullscreen></iframe>
       </div>
-
-      <!-- Imagen para escritorio -->
-      <div class="col-lg-5 text-center mb-lg-0 d-none d-lg-block image-container" data-aos="fade-left">
-        <div class="image-box position-relative d-inline-block">
-          <div class="bg-accent-shadow position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle, rgba(240,28,0,0.3) 0%, transparent 70%); z-index: 1;"></div>
-          <img src="Imagenes/Lucas.jpeg" alt="Entrenador" class="rounded-4 hero-img-mobile" style="width: 100%; height: auto; z-index: 2; position: relative; transition: transform 0.3s ease;">
-        </div>
-      </div>
-
     </div>
+
+    <!-- Mensaje de urgencia -->
+    <h2 class="urgent-message mb-3">
+      Cupos limitados. Solo para personas decididas a cambiar su vida.
+    </h2>
+    <p class="lead secondary-text mb-5">
+      Lográ resultados visibles y sostenibles en solo 3 meses con un acompañamiento real, profesional y personalizado.
+    </p>
+
+    <!-- Botón CTA potente -->
+    <a href="#formulario" class="btn btn-cta mt-2 px-5 py-3">
+      Reservá tu lugar ahora
+    </a>
+
   </div>
 
-  <!-- Fondo de partículas -->
-  <div id="particles-js"></div>
+  <!-- Efectos decorativos: líneas diagonales sutiles -->
+  <div class="decorative-lines" aria-hidden="true"></div>
+
 </section>
-
-
-
-
-        
-      
-        
-        
-<!-- Sección: Servicios -->
-<section class="servicios-premium py-5" id="second" data-aos="fade-right">
-  <div class="container text-center" style="background-color: #131414;padding-bottom  : 3vh; padding-top: 3vh;margin-bottom: 3vh; margin-top: 3vh; border-radius: 10vh;">
-    <h2 class="display-5 fw-bold mb-5 text-uppercase text-danger-emphasis" style="color: #e0432e !important;">Nuestros Servicios</h2>
-    <div class="row g-5 justify-content-center">
-      
-      <!-- Servicio: Calistenia -->
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="servicio-card glass-effect h-100 p-4 text-white">
-          <div class="icon-box mb-3">
-            <i class="bi bi-body-text servicio-icon display-3 text-danger"></i>
-          </div>
-          <h3 class="fw-bold text-danger mb-3" style="color: #b91d09 !important;">Calistenia</h3>
-          <p class="mb-4">Clases y mentorías personalizadas de Calistenia para mejorar tu rendimiento físico desde cero hasta avanzado.</p>
-          <a href="calistenia.html" class="btn btn-outline-danger w-75 mx-auto" style="background-color: #c21c10;color: white;">Ver más</a>
-        </div>
-      </div>
-
-      <!-- Servicio: Personal Trainer -->
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="servicio-card glass-effect h-100 p-4 text-white">
-          <div class="icon-box mb-3">
-            <i class="bi bi-person-arms-up servicio-icon display-3 text-danger"></i>
-          </div>
-          <h3 class="fw-bold text-danger mb-3" style="color: #bb2410 !important;">Personal Trainer</h3>
-          <p class="mb-4">Entrenamientos personalizados y asesoramiento integral para lograr tus metas de forma segura y eficiente.</p>
-          <a href="personal-trainer.html" class="btn btn-outline-danger w-75 mx-auto"  style="background-color: #c21c10;color: white;">Ver más</a>
-        </div>
-      </div>
-
-      <!-- Servicio: Pack Completo -->
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="servicio-card glass-effect h-100 p-4 text-white">
-          <div class="icon-box mb-3">
-            <i class="bi bi-stars servicio-icon display-3 text-danger"></i>
-          </div>
-          <h3 class="fw-bold text-danger mb-3" style="color: #bb2410 !important;">Pack de Servicios</h3>
-          <p class="mb-4">Combiná nuestros servicios de Calistenia y Personal Trainer para una experiencia integral y premium.</p>
-          <a href="pack.html" class="btn btn-outline-danger w-75 mx-auto"  style="background-color: #c21c10;color: white;">Ver más</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-        
-      
-
-  <section class="py-5">
-    <div class="container text-center">
-      <h1 class="mb-4 fw-bold" >LO QUE VES ACA ES ESFUERZO, NO GENÉTICA</h1>
-      <h5 class="mb-4 fw-bold text-white">No importa cómo estés hoy. Importa cuánto estás dispuesto a cambiar.</h5>
-      <div class="d-flex justify-content-center" data-aos="fade-up">
-        <img src="Imagenes/Imagencambio.jpeg" alt="Imagen principal" class="img-fluid rounded shadow" style="width: 70vh; border: 2px solid rgb(255, 0, 0);">
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <div id="carouselExampleIndicators" class="carousel slide position-relative carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
-      <h2 class="mb-4 fw-bold text-center "> TU CAMBIO TAMBIEN PUEDE SER EL PROXIMO</h2>
-      <h5 class="mb-4 fw-bold text-center text-white"> Ellos arrancaron igual que vos... y hoy son su mejor versión.</h5>
-      
-      <!-- Indicadores -->
-      <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      </div>
-    
-      <!-- Imágenes -->
-      <div class="carousel-inner carrusel">
-          <div class="carousel-item active">
-              <img src="Imagenes/imagenpareja.jpeg" class="d-block mx-auto" alt="..." style="width: 70vh !important">
-          </div>
-          <div class="carousel-item">
-              <img src="Imagenes/imagenprincipal.jpg" class="d-block mx-auto" alt="..." style="width: 70vh !important ">
-          </div>
-          <div class="carousel-item">
-              <img src="Imagenes/imagenpareja.jpeg" class="d-block mx-auto" alt="..." style="width: 70vh !important">
-          </div>
-          <div class="carousel-item">
-              <img src="Imagenes/imagenprincipal.jpeg" class="d-block mx-auto" alt="..." style="width: 70vh !important;">
-          </div>
-          <div class="carousel-item">
-              <img src="Imagenes/imagenpareja.jpeg" class="d-block mx-auto" alt="..." style="width: 70vh !important">
-          </div>
-      </div>
-
-      <!-- Zonas cliqueables a los lados -->
-      <div class="position-absolute top-0 start-0 w-50 h-100" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 10; cursor: pointer;"></div>
-      <div class="position-absolute top-0 end-0 w-50 h-100" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 10; cursor: pointer;"></div>
-  </div>
-
-
-  <section class="py-5" >
-    <div class="container" data-aos="flip-left">
-      <div class="row align-items-center">
-        <!-- Texto -->
-        <div class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column align-items-start justify-content-center p-5" style="background-color: #1f1e1e; border-radius: 15px;">
-          <h3 class="fw-bold  mb-3" style="font-size: 2.2rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);">Si estás leyendo esto, ya diste el primer paso.</h3>
-          <h4 class="mb-3" style="font-size: 1.8rem; font-weight: 600; color: #f01c00;">Lo que viene después depende de vos.</h4>
-          <h5 class="mb-4" style="color: #cc0e00; font-size: 1.6rem; font-weight: 500; line-height: 1.6;">Entrenar conmigo no es solo mejorar tu cuerpo, es transformar tu mentalidad, tu disciplina y tu vida.</h5>
-          <p class="fw-bold fs-4" style="color: #57ce84;font-size: 1.7rem; font-style: italic;">Estás a un paso de convertirte en tu mejor versión. ¿Te animás?</p>
-          <button class="btn mt-3 px-4 py-2" style="background-color: #801a0c;color: white;  font-size: 1.2rem; border-radius: 25px; box-shadow: 0px 4px 8px rgba(212, 0, 0, 0.623);" type="button">¡Comencemos ahora!</button>
-        </div>
-        
-
-        <!-- Imagen -->
-        <div class="col-lg-6 text-center">
-          <img src="Imagenes/imagenauto.jpg" alt="Transformación" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <footer style="background-color: #161313; padding: 2rem 0; border-top: 3px solid #ff1100; margin-top: 8vh;">
+  <!-- NAVBAR -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 sticky-top" aria-label="Main navigation">
     <div class="container">
+      <a class="navbar-brand fw-bold fs-3 text-uppercase" href="#" aria-label="Ir a inicio Milozzfit">MILOZZFIT</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <!-- Parte superior: marca + redes -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3 ">
-        <a class="navbar-brand fw-bold fs-3 nombre-marca" href="#">MILOZZFIT</a>
-        <div class="d-flex gap-3 mt-3 mt-md-0">
-          <a href="https://instagram.com/" target="_blank" class="fs-4">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://tiktok.com/" target="_blank" class="fs-4">
-            <i class="bi bi-tiktok"></i>
-          </a>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+        <ul class="navbar-nav gap-3 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link nav-custom" href="index.html" tabindex="0">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-custom" href="secciones/calistenia.html" tabindex="0">Plan Personalizado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-custom" href="personaltrainer.html" tabindex="0">Plan Premium</a>
+          </li>
+        </ul>
       </div>
-
-      <!-- Parte inferior: políticas -->
-      <div class="d-flex flex-column flex-md-row justify-content-between text-center text-md-start small">
-        <div class="mb-2 mb-md-0">
-          <a href="#" class="me-3 text-decoration-none">Políticas de privacidad</a>
-          <a href="#" class="text-decoration-none">Políticas de cookies</a>
-        </div>
-        <div>
-          Copyright 2024 © Lucas Milozzi
-        </div>
-      </div>
-
     </div>
-  </footer>
+  </nav>
+  
+</header>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- HERO -->
+  <main>
+    <section class="hero-section d-flex align-items-center presentaci role="banner" aria-label="Sección principal Milozzfit">
+      <div class="container">
+        <div class="row align-items-center text-center text-lg-start">
+          <div class="col-lg-6 hero-text" data-aos="fade-right" data-aos-duration="1200">
+            <h1>DESAFÍA TUS LÍMITES, <br /><span style="color:#f01c00;">TRANSFORMA TU VIDA</span></h1>
+            <h2>No es solo fitness. Es una transformación de vida.</h2>
+
+            <ul class="benefits-list my-4">
+              <li><i class="fas fa-check-circle me-2" style="color: #140605;"></i>Nutricionistas especializados</li>
+              <li><i class="fas fa-check-circle me-2" style="color: #140605;"></i>Rutina 100% personalizada</li>
+              <li><i class="fas fa-check-circle me-2" style="color: #140605;"></i>Acompañamiento 24/7</li>
+              <li><i class="fas fa-check-circle me-2" style="color: #140605;"></i>Comunidad exclusiva de apoyo</li>
+              <li><i class="fas fa-check-circle me-2" style="color: #140605;"></i>App fitness exclusiva Milozzfit</li>
+              <li><i class="fas fa-check-circle me-2" style="color: #140605;"></i>Coaching en vivo y talleres</li>
+            </ul>
 
 
+            <a href="#contacto" class="btn btn-primary btn-lg btn-primario" role="button" aria-label="Agenda una consultoría gratuita">AGENDA UNA CONSULTORÍA GRATUITA</a>
+          </div>
+          <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1200">
+            <img src="Imagenes/Lucas.jpeg" alt="Entrenador personal Milozzfit" class="img-fluid rounded-4 shadow-lg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios emocionales -->
+    <section class="benefits-section mt-5" aria-labelledby="beneficios-title">
+      <div class="container text-center">
+        <h3 id="beneficios-title">Tu transformación, nuestra misión</h3>
+        <p class="mb-4 fs-5 fw-light">En Milozzfit no solo entrenamos cuerpos, entrenamos personas. Aquí se construyen historias de fuerza,
+          perseverancia y éxito. Tu compromiso es nuestro motor y tu progreso nuestra meta diaria.</p>
+        <ul class="benefits-list mx-auto" style="max-width: 700px;">
+          <li>Rutinas científicamente diseñadas para resultados reales</li>
+          <li>Soporte emocional y mental para potenciar tu motivación</li>
+          <li>Plan nutricional adaptado a tu estilo de vida</li>
+          <li>Innovación tecnológica con nuestra app exclusiva</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services-section" aria-labelledby="servicios-title">
+      <div class="container">
+        <h2 id="servicios-title" class="mb-5 text-center" style="color:#f01c00; font-weight: 900;">Nuestros Servicios</h2>
+        <div class="row g-4">
+        <div class="col-md-4">
+            <div class="service-card h-100">
+              <i class="bi bi-fork-knife" aria-hidden="true"></i>
+              <h4>Plan Nutricional</h4>
+              <p>Planes alimenticios diseñados por nutricionistas especializados que se adaptan a tu estilo de vida.</p>
+              <a href="#contacto" class="btn btn-outline-light mt-auto" aria-label="Solicitar plan nutricional">Solicitar</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card h-100">
+              <i class="bi bi-person-check-fill" aria-hidden="true"></i>
+              <h4>Plan Personalizado</h4>
+              <p>Rutinas 100% a tu medida para que logres tus objetivos sin lesiones ni frustraciones.</p>
+              <a href="#contacto" class="btn btn-outline-light mt-auto" aria-label="Solicitar entrenamiento personalizado">Solicitar</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card h-100">
+              <i class="bi bi-phone" aria-hidden="true"></i>
+              <h4>Plan Premium</h4>
+              <p>Clases y mentorías personalizadas de Calistenia para mejorar tu rendimiento físico desde cero hasta avanzado.</p>
+              <a href="#contacto" class="btn btn-outline-light mt-auto" aria-label="Solicitar Plan Premium">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials-section" aria-label="Testimonios de clientes satisfechos">
+      <div class="container">
+        <h3 class="mb-4 text-center" style="color:#f01c00;">Lo que dicen nuestros clientes</h3>
+        <blockquote class="testimonial">
+          "Gracias a Milozzfit no solo perdí peso, recuperé confianza y salud mental. Un cambio que me acompañará para siempre."
+          <footer class="testimonial-footer">— Valeria P.</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          "El coaching y la comunidad hacen toda la diferencia. Entrenar acá es un estilo de vida."
+          <footer class="testimonial-footer">— Martín G.</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          "La app es increíble, me ayuda a seguir mi plan y no desviarme. Milozzfit es más que un gimnasio, es familia."
+          <footer class="testimonial-footer">— Sofía R.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Sección: Cambios físicos de los clientes -->
+<section class="clients-transformation-section" aria-labelledby="clientes-transformacion" style="background-color: #111; color: white; padding: 4rem 0;">
+  <div class="container">
+    <h2 id="clientes-transformacion" class="text-center mb-5" style="color: #f01c00; font-weight: 900;">Transformaciones Reales de Nuestros Clientes</h2>
+    <div class="row g-4 justify-content-center">
+      <!-- Ejemplo tarjeta cliente -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100 shadow" style="border-radius: 15px;">
+          <img src="imagenes/alumno1-antes.jpg" class="card-img-top" alt="Cliente 1 antes">
+          <img src= class="card-img-top mt-2" alt="Cliente 1 después">
+          <div class="card-body">
+            <h5 class="card-title">María López</h5>
+            <p class="card-text">"Gracias a este programa, recuperé mi energía y confianza en solo 3 meses."</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100 shadow" style="border-radius: 15px;">
+          <img src="imagenes/alumno2-antes.jpg" class="card-img-top" alt="Cliente 2 antes">
+          <img src="" class="card-img-top mt-2" alt="Cliente 2 después">
+          <div class="card-body">
+            <h5 class="card-title">Juan Pérez</h5>
+            <p class="card-text">"Entrenar con Milozzfit cambió mi vida, no solo físicamente sino mentalmente."</p>
+          </div>
+        </div>
+      </div>
+      <!-- Agrega más tarjetas de clientes según necesites -->
+    </div>
+  </div>
+</section>
+
+<!-- Sección: Transformación del entrenador personal -->
+<section class="trainer-transformation-section" aria-labelledby="entrenador-transformacion" style="background-color: #1f1e1e; color: white; padding: 4rem 0;">
+  <div class="container d-flex flex-column flex-lg-row align-items-center gap-5">
+    <div class="trainer-images col-lg-6 text-center">
+      <img src="Imagenes/Imagencambio.jpeg" alt="Entrenador después" class="img-fluid rounded shadow" style="max-width: 300px;">
+    </div>
+    <div class="trainer-text col-lg-6">
+      <h2 id="entrenador-transformacion" style="color: #f01c00; font-weight: 900; text-transform: uppercase; letter-spacing: 3px;">El Cambio que Inspira</h2>
+      <p style="font-size: 1.2rem; line-height: 1.6;">
+        Nuestro entrenador personal no solo habla de resultados, los vive. Repitiendo el mismo camino que él recorrió, vos también podés transformar tu cuerpo y mente. 
+        Su historia es prueba viva de que con disciplina y el plan correcto, los cambios son posibles y duraderos.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Sección final motivadora con foto del entrenador -->
+<section class="call-to-action-section" aria-labelledby="cta-title" style="background-color: #1f1e1e; color: white; padding: 5rem 2rem; border-radius: 15px; margin: 3rem auto; max-width: 900px;">
+  <div class="container d-flex flex-column flex-md-row align-items-center gap-4">
+    <div class="cta-text col-md-7">
+      <h3 id="cta-title" class="fw-bold mb-3" style="font-size: 2.2rem; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 8px rgba(0,0,0,0.3);">
+        Si estás leyendo esto, ya diste el primer paso.
+      </h3>
+      <h4 class="mb-3" style="font-size: 1.8rem; font-weight: 600; color: #f01c00;">
+        Lo que viene después depende de vos.
+      </h4>
+      <h5 class="mb-4" style="color: #cc0e00; font-size: 1.6rem; font-weight: 500; line-height: 1.6;">
+        Entrenar conmigo no es solo mejorar tu cuerpo, es transformar tu mentalidad, tu disciplina y tu vida.
+      </h5>
+      <p class="fw-bold fs-4" style="color: #57ce84; font-style: italic; font-size: 1.7rem;">
+        Estás a un paso de convertirte en tu mejor versión. ¿Te animás?
+      </p>
+      <button class="btn mt-3 px-4 py-2" style="background-color: #801a0c; color: white; font-size: 1.2rem; border-radius: 25px; box-shadow: 0 4px 8px rgba(212,0,0,0.62);" type="button">
+        ¡Comencemos ahora!
+      </button>
+    </div>
+    <div class="cta-image col-md-5 text-center">
+      <img src="Imagenes/imagenauto.jpg" alt="Entrenador personal Milozzfit" class="img-fluid rounded shadow" style="max-width: 300px;">
+    </div>
+  </div>
+</section>
+
+
+    <!-- ¿Por qué elegir Milozzfit? -->
+    <section class="why-section" aria-labelledby="why-title">
+      <h2 id="why-title">¿Por qué elegir Milozzfit?</h2>
+      <p>Porque aquí tu salud es prioridad, combinamos experiencia, innovación y un enfoque humano que te acompaña en cada paso. No vendemos promesas, entregamos resultados reales y sostenibles.</p>
+    </section>
+
+    <a href="https://wa.me/5492213633930?text=Hola,%20quiero%20más%20información%20acerca%20de%20Vaplux
+  " class="whatsapp-flotante" target="_blank">
+    <img src="../Imagenes/whatsapp.png" alt="WhatsApp" id="imagenwsp"/>
+    </a>
+    <!-- Contacto (Footer extendido con formulario o datos) -->
+    <footer role="contentinfo" id="contacto">
+      <p>© 2025 Milozzfit. Todos los derechos reservados.</p>
+      <p>
+        Contacto:
+        <a href="mailto:contacto@milozzfit.com" aria-label="Enviar correo a Milozzfit">contacto@milozzfit.com</a> |
+        <a href="https://www.instagram.com/milozzfit" target="_blank" rel="noopener" aria-label="Ir a Instagram Milozzfit">Instagram</a> |
+        <a href="https://www.facebook.com/milozzfit" target="_blank" rel="noopener" aria-label="Ir a Facebook Milozzfit">Facebook</a>
+      </p>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 2200, // duración en milisegundos (más lento)
-      easing: 'ease-in-out', // transición más suave
-      once: false, // si querés que se animen solo una vez
-      delay: 100, // retardo opcional
-    });
-
-
-    particlesJS("particles-js", {
-      particles: {
-        number: {
-          value: 60,
-          density: {
-            enable: true,
-            value_area: 800
-          }
-        },
-        color: {
-          value: "#ff0000"
-        },
-        shape: {
-          type: "circle",
-          stroke: {
-            width: 0,
-            color: "#000"
-          },
-          polygon: {
-            nb_sides: 5
-          },
-          image: {
-            src: "images/github.svg",
-            width: 100,
-            height: 100
-          }
-        },
-        opacity: {
-          value: 0.5,
-          random: true,
-          anim: {
-            enable: true,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false
-          }
-        },
-        size: {
-          value: 5,
-          random: true,
-          anim: {
-            enable: true,
-            speed: 10,
-            size_min: 0.1,
-            sync: false
-          }
-        },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#ff0000",
-          opacity: 0.4,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 6,
-          direction: "none",
-          random: false,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200
-          }
-        }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse"
-          },
-          onclick: {
-            enable: true,
-            mode: "push"
-          },
-          resize: true
-        }
-      },
-      retina_detect: true
-    });
+    AOS.init();
   </script>
 
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.querySelector('.navbar');
+  const videoSection = document.querySelector('.video-section');
+  
+  // Obtenemos la altura de la sección video (incluido padding)
+  const videoBottom = videoSection.offsetTop + videoSection.offsetHeight;
 
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY || window.pageYOffset;
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
+    if (scrollY > videoBottom) {
+      // Bajamos más allá de la sección video: navbar fijo arriba
+      navbar.classList.add('sticky');
+      navbar.classList.remove('at-top');
+      navbar.style.top = '0';
+    } else if (scrollY <= videoBottom && scrollY > videoSection.offsetTop) {
+      // Estamos en la sección video, pero scroll > top
+      // El navbar se pone "tope" justo en el borde inferior de la sección video (no tapa la sección)
+      navbar.classList.remove('sticky');
+      navbar.classList.add('at-top');
+      navbar.style.top = videoBottom + 'px';
+    } else {
+      // Estamos arriba de la sección video (scroll en top)
+      navbar.classList.remove('sticky', 'at-top');
+      navbar.style.top = null;
+    }
+  });
+});
 </script>
 
+</body>
 
-
-  </body>
-
-  </body>
-  </html>
+</html>
