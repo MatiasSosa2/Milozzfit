@@ -660,7 +660,7 @@ footer a:focus {
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .hero-text h1 {
