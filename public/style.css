@@ -427,6 +427,11 @@
   cursor: pointer;
 }
 
+.btn-primario {
+  margin-bottom: 0;
+}
+
+
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--color-primary-dark);
@@ -439,7 +444,10 @@
   padding: 5rem 2rem;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(240, 28, 0, 0.2);
+  
 }
+
+
 
 .benefits-title {
   color: var(--color-primary);
