@@ -669,6 +669,10 @@ footer a:focus {
  .hero-section {
   margin-bottom: -20px;
  }
+
+ .benefits-section {
+  margin-top: -50px;
+ }
 }
 
 
