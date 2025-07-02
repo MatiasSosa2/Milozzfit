@@ -1,221 +1,393 @@
-/* =====================
-   Variables globales
-   ===================== */
-:root {
-  --color-bg: #121212;
-  --color-text: #eee;
-  --color-text-alt: #bbb;
-  --color-primary: #f01c00;
-  --color-primary-dark: #c31500;
-  --color-primary-light: #ff3b3b;
-  --color-shadow-primary: rgba(240, 28, 0, 0.7);
-  --color-shadow-primary-light: rgba(255, 59, 59, 0.9);
-  --color-bg-alt: #1f1f1f;
-  --color-benefit-bg: #262626;
-  --color-benefit-bg-hover: rgba(255, 50, 50, 0.15);
-  --color-link-hover: #c31500;
+  /* =====================
+    Variables globales
+    ===================== */
+  :root {
+    --color-bg: #121212;
+    --color-text: #eee;
+    --color-text-alt: #bbb;
+    --color-primary: #f01c00;
+    --color-primary-dark: #c31500;
+    --color-primary-light: #ff3b3b;
+    --color-shadow-primary: rgba(240, 28, 0, 0.7);
+    --color-shadow-primary-light: rgba(255, 59, 59, 0.9);
+    --color-bg-alt: #1f1f1f;
+    --color-benefit-bg: #262626;
+    --color-benefit-bg-hover: rgba(255, 50, 50, 0.15);
+    --color-link-hover: #c31500;
+  }
+
+  /* =====================
+    Estilos principales Milozzfit
+    ===================== */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Montserrat:wght@700;900&display=swap');
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .navbar {
+    background-color: rgba(43, 36, 36, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 1rem 2rem;
+    height: 100px;
+    z-index: 99999999;
+  }
+
+  .navbar-brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand-name-navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    background: linear-gradient(90deg, var(--color-primary), #e60023, #ff4d4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+
+  .red-line-navbar {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--color-primary), #b30000);
+    box-shadow: 0 0 8px var(--color-primary);
+    border-radius: 2px;
+    margin-top: 6px;
+  }
+
+
+
+  .btn-outline-light {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn-outline-light:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+
+  .video-section {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    position: relative;
+    background-color: var(--color-bg);
+    overflow: hidden;
+  }
+
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .red-line {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--color-primary), #b30000);
+    box-shadow: 0 0 10px var(--color-primary);
+    margin: 1rem auto 3rem auto;
+    border-radius: 2px;
+  }
+
+  .top-subtext {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .text-highlight {
+    color: var(--color-primary-light);
+    font-weight: 800;
+    text-shadow: 0 0 6px rgba(255, 59, 59, 0.3);
+  }
+
+  .text-muted-sub {
+    color: var(--color-text-alt);
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .proof-text {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 1.2rem;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    line-height: 1.6;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.05);
+  }
+
+
+
+  .lead.highlight {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #ddd;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+  }
+
+  .highlight-red {
+    color: var(--color-primary-light);
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #7a0000;
+  }
+
+  .video-wrapper {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 6px rgba(255, 28, 0, 0.6), inset 0 0 12px rgba(255, 28, 0, 0.35);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .video-wrapper:hover {
+    box-shadow: 0 0 30px 10px rgba(255, 40, 40, 0.8), inset 0 0 20px rgba(255, 40, 40, 0.6);
+  }
+
+  .urgent-message {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 6px #7a0000;
+    margin: 2rem 0 1rem;
+  }
+
+  .secondary-text {
+    font-size: 1.1rem;
+    color: var(--color-text-alt);
+    max-width: 650px;
+    margin: 0 auto 3rem;
+  }
+
+  .btn-cta {
+    background: linear-gradient(135deg, var(--color-primary), #cc0e00);
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 16px 40px;
+    border-radius: 40px;
+    box-shadow: 0 6px 20px var(--color-shadow-primary);
+    border: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+
+  .btn-cta:hover {
+    background: linear-gradient(135deg, var(--color-primary-light), #e02020);
+    box-shadow: 0 8px 25px var(--color-shadow-primary-light);
+  }
+
+  .decorative-lines {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: 
+      repeating-linear-gradient(45deg, rgba(255, 28, 0, 0.05) 0, rgba(255, 28, 0, 0.05) 2px, transparent 2px, transparent 10px),
+      repeating-linear-gradient(-45deg, rgba(255, 28, 0, 0.05) 0, rgba(255, 28, 0, 0.05) 2px, transparent 2px, transparent 10px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+
+
+/* ===================== 
+  Media Queries para dispositivos móviles
+===================== */
+
+@media (max-width: 768px) {
+  /* Estilo para la navbar */
+  .navbar {
+    padding: 0.5rem 1rem;
+    height: auto;
+  }
+
+  .navbar-brand-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand-name-navbar {
+    font-size: 1.5rem;
+  }
+
+  .btn-outline-light {
+    font-size: 0.9rem;
+  }
+
+  /* Estilo para la video section */
+  .video-section {
+    padding: 4rem 1rem;
+    min-height: auto;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 40, 40, 0.8), inset 0 0 20px rgba(255, 40, 40, 0.6);
+  }
+
+  .top-subtext {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .lead.highlight {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .proof-text {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .urgent-message {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+  }
+
+  .btn-cta {
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+  }
+  
+  /* Ajustar la sección de los textos */
+  .secondary-text {
+    font-size: 1rem;
+    margin: 1rem auto 2.5rem;
+  }
+
+  /* Ajustar la posición del video */
+  .video-section .ratio {
+    height: 200px;
+    max-width: 100%;
+  }
+  
+  /* Ajustar la fuente y márgenes de los botones */
+  .btn-cta {
+    font-size: 1rem;
+    padding: 12px 30px;
+    margin-top: 1rem;
+  }
+
+  .btn-outline-light {
+    font-size: 0.9rem;
+  }
 }
 
-/* =====================
-   Estilos principales Milozzfit
-   ===================== */
+@media (max-width: 480px) {
+  /* Ajustes adicionales para móviles más pequeños */
+  .navbar {
+    padding: 0.5rem 0.5rem;
+  }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Montserrat:wght@700;900&display=swap');
+  .navbar-brand-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  margin: 0;
-  padding: 0;
-}
+  .brand-name-navbar {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+  .btn-outline-light {
+    font-size: 0.8rem;
+  }
 
-.navbar {
-  background-color: rgba(43, 36, 36, 0.95);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  padding: 1rem 2rem;
-  height: 100px;
-  z-index: 99999999;
-}
+  .video-section {
+    padding: 3rem 1rem;
+  }
 
-.navbar-brand-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .video-wrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 
-.brand-name-navbar {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 1.75rem;
-  background: linear-gradient(90deg, var(--color-primary), #e60023, #ff4d4d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1;
-}
+  .top-subtext {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
 
-.red-line-navbar {
-  height: 3px;
-  width: 100%;
-  background: linear-gradient(90deg, var(--color-primary), #b30000);
-  box-shadow: 0 0 8px var(--color-primary);
-  border-radius: 2px;
-  margin-top: 6px;
-}
+  .lead.highlight {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
 
+  .proof-text {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
+  .urgent-message {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+  }
 
-.btn-outline-light {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-  font-weight: 600;
-  cursor: pointer;
-}
+  .btn-cta {
+    font-size: 1rem;
+    padding: 10px 28px;
+    margin-top: 1rem;
+  }
 
-.btn-outline-light:hover {
-  background-color: var(--color-primary);
-  color: #fff;
-}
+  .decorative-lines {
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: 
+      repeating-linear-gradient(45deg, rgba(255, 28, 0, 0.05) 0, rgba(255, 28, 0, 0.05) 2px, transparent 2px, transparent 10px),
+      repeating-linear-gradient(-45deg, rgba(255, 28, 0, 0.05) 0, rgba(255, 28, 0, 0.05) 2px, transparent 2px, transparent 10px);
+  }
 
-.video-section {
-  min-height: 100vh;
-  padding: 6rem 2rem;
-  position: relative;
-  background-color: var(--color-bg);
-  overflow: hidden;
-}
+  .video-section .ratio {
+    height: 180px;
+    max-width: 100%;
+  }
 
-
-@keyframes slideIn {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.red-line {
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, var(--color-primary), #b30000);
-  box-shadow: 0 0 10px var(--color-primary);
-  margin: 1rem auto 3rem auto;
-  border-radius: 2px;
-}
-
-.top-subtext {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  text-align: center;
-}
-
-.text-highlight {
-  color: var(--color-primary-light);
-  font-weight: 800;
-  text-shadow: 0 0 6px rgba(255, 59, 59, 0.3);
-}
-
-.text-muted-sub {
-  color: var(--color-text-alt);
-  font-weight: 500;
-  font-style: italic;
-}
-
-.proof-text {
-  font-size: 1.1rem;
-  color: #ccc;
-  margin-top: 1.2rem;
-  margin-bottom: 2.5rem;
-  font-style: italic;
-  line-height: 1.6;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.05);
+  .proof-text {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 
 
-.lead.highlight {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: #ddd;
-  margin: 0 auto 2rem auto;
-  line-height: 1.6;
-}
-
-.highlight-red {
-  color: var(--color-primary-light);
-  font-weight: 900;
-  text-shadow: 1px 1px 2px #7a0000;
-}
-
-.video-wrapper {
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 0 20px 6px rgba(255, 28, 0, 0.6), inset 0 0 12px rgba(255, 28, 0, 0.35);
-  transition: box-shadow 0.3s ease;
-}
-
-.video-wrapper:hover {
-  box-shadow: 0 0 30px 10px rgba(255, 40, 40, 0.8), inset 0 0 20px rgba(255, 40, 40, 0.6);
-}
-
-.urgent-message {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--color-primary-light);
-  text-transform: uppercase;
-  text-shadow: 1px 1px 6px #7a0000;
-  margin: 2rem 0 1rem;
-}
-
-.secondary-text {
-  font-size: 1.1rem;
-  color: var(--color-text-alt);
-  max-width: 650px;
-  margin: 0 auto 3rem;
-}
-
-.btn-cta {
-  background: linear-gradient(135deg, var(--color-primary), #cc0e00);
-  color: white;
-  font-weight: 700;
-  font-size: 1.2rem;
-  padding: 16px 40px;
-  border-radius: 40px;
-  box-shadow: 0 6px 20px var(--color-shadow-primary);
-  border: none;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-}
-
-.btn-cta:hover {
-  background: linear-gradient(135deg, var(--color-primary-light), #e02020);
-  box-shadow: 0 8px 25px var(--color-shadow-primary-light);
-}
-
-.decorative-lines {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: 
-    repeating-linear-gradient(45deg, rgba(255, 28, 0, 0.05) 0, rgba(255, 28, 0, 0.05) 2px, transparent 2px, transparent 10px),
-    repeating-linear-gradient(-45deg, rgba(255, 28, 0, 0.05) 0, rgba(255, 28, 0, 0.05) 2px, transparent 2px, transparent 10px);
-  pointer-events: none;
-  z-index: 0;
-}
-
+  
 /* Hero */
 .hero-section {
   min-height: 90vh;
