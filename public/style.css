@@ -36,15 +36,41 @@ a {
 }
 
 .navbar {
-  background-color: rgba(31, 30, 30, 0.9);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background-color: rgba(43, 36, 36, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  height: 100px;
+  z-index: 99999999;
 }
 
-.navbar-brand {
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: var(--color-primary) !important;
+.navbar-brand-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
+.brand-name-navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.75rem;
+  background: linear-gradient(90deg, var(--color-primary), #e60023, #ff4d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.red-line-navbar {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--color-primary), #b30000);
+  box-shadow: 0 0 8px var(--color-primary);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+
 
 .btn-outline-light {
   border-color: var(--color-primary);
@@ -66,18 +92,6 @@ a {
   overflow: hidden;
 }
 
-.brand-name {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  text-transform: uppercase;
-  background: linear-gradient(90deg, var(--color-primary), #e60023, #ff4d4d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 0.12em;
-  margin-bottom: 0.8rem;
-  animation: slideIn 1s ease-out both;
-}
 
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(-30px); }
@@ -93,11 +107,47 @@ a {
   border-radius: 2px;
 }
 
-.lead.highlight {
-  font-size: 1.35rem;
+.top-subtext {
+  font-size: 1.2rem;
   font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.text-highlight {
+  color: var(--color-primary-light);
+  font-weight: 800;
+  text-shadow: 0 0 6px rgba(255, 59, 59, 0.3);
+}
+
+.text-muted-sub {
+  color: var(--color-text-alt);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.proof-text {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 1.2rem;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+  line-height: 1.6;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.05);
+}
+
+
+
+.lead.highlight {
+  font-size: 2.4rem;
+  font-weight: 800;
   color: #ddd;
-  max-width: 700px;
   margin: 0 auto 2rem auto;
   line-height: 1.6;
 }
@@ -483,4 +533,68 @@ footer a:focus {
   .why-section p {
     font-size: 1rem;
   }
+}
+
+
+
+.agendar-section {
+  background-color: var(--color-bg-alt);
+  padding: 5rem 1rem;
+  border-top: 2px solid var(--color-primary-dark);
+  border-bottom: 2px solid var(--color-primary-dark);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.section-subtitle {
+  color: var(--color-text-alt);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.agendar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input-group-custom {
+  position: relative;
+}
+
+.input-group-custom input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-group-custom input::placeholder {
+  color: #999;
+  opacity: 0.8;
+}
+
+.input-group-custom input:focus {
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 0 10px rgba(240, 28, 0, 0.5);
+  outline: none;
+}
+
+.form-success {
+  display: none;
+  font-weight: 600;
+  color: var(--color-primary-light);
 }

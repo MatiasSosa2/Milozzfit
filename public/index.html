@@ -19,42 +19,49 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="root"></div>
   <!-- Navbar simplificada -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-3 text-uppercase" href="#">MILOZZFIT</a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
-        <ul class="navbar-nav gap-3 align-items-center">
-          <li class="nav-item">
-            <a href="/login" target="_blank" class="btn btn-outline-light">Entrar a la Plataforma</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3 sticky-top" >
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="navbar-brand-wrapper d-flex flex-column align-items-start">
+      <span class="brand-name-navbar">MILOZZFIT</span>
+      <div class="red-line-navbar" aria-hidden="true"></div>
     </div>
-  </nav>
+    <a href="/login" target="_blank" class="btn btn-outline-light">Entrar a la Plataforma</a>
+  </div>
+</nav>
+
+
 
   <!-- Hero principal simplificado -->
-  <section class="video-section text-white d-flex flex-column align-items-center justify-content-center">
-    <div class="container text-center position-relative">
-      <h1 class="brand-name">MILOZZFIT</h1>
-      <div class="red-line" aria-hidden="true"></div>
-      <p class="lead highlight">
-        <strong>Transformá tu cuerpo y mente en 90 días</strong> con un método exclusivo, 100% virtual y seguimiento real.
-      </p>
-      <div class="video-wrapper mb-5">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" title="Video Milozzfit" allowfullscreen></iframe>
-        </div>
+<section class="video-section text-white d-flex flex-column align-items-center justify-content-center">
+  <div class="container text-center position-relative">
+
+    <!-- NUEVO texto encima -->
+    <p class="top-subtext">
+      <span class="text-highlight">CUPOS LIMITADOS</span> || 
+      <span class="text-muted-sub">Programa exclusivo para profesionales, emprendedores o empresarios</span>
+    </p>
+
+    <!-- Frase principal -->
+    <p class="lead highlight">
+      <strong>Transformá tu cuerpo y mente en 90 días</strong> con un método exclusivo, 100% virtual y seguimiento real.
+    </p>
+
+    <!-- Frase debajo como prueba social -->
+    <p class="proof-text">Ya hay personas haciendo el cambio. Es posible. Vos también podés.</p>
+
+    <div class="video-wrapper mb-5">
+      <div class="ratio ratio-16x9" style="z-index: 9999999">
+        <iframe src="" title="Video Milozzfit" allowfullscreen></iframe>
       </div>
-      <h2 class="urgent-message">Solo para personas decididas a cambiar su vida.</h2>
-      <a href="#agendar" class="btn btn-cta">Reservá tu lugar ahora</a>
     </div>
-    <div class="decorative-lines"></div>
-  </section>
+
+    <h2 class="urgent-message">Solo para personas decididas a cambiar su vida.</h2>
+    <a href="#agendar" class="btn btn-cta">Reservá tu lugar ahora</a>
+  </div>
+  <div class="decorative-lines"></div>
+</section>
+
 
   <!-- Hero con beneficios tangibles -->
   <main>
@@ -207,25 +214,28 @@
     </section>
 
     <!-- Formulario de agenda -->
-    <section id="agendar" class="container my-5 py-5 text-center">
-      <h2 class="mb-4" style="color:#f01c00;">Agenda tu reunión</h2>
-      <form id="form-agenda" class="w-100" style="max-width:600px;margin:auto;">
-        <div class="mb-3 text-start">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" name="nombre" required>
-        </div>
-        <div class="mb-3 text-start">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" name="email" required>
-        </div>
-        <div class="mb-3 text-start">
-          <label for="calendario" class="form-label">Elegí día y hora</label>
-          <input id="calendario" name="fecha_hora" class="form-control" placeholder="Seleccionar" required>
-        </div>
-        <button type="submit" class="btn btn-cta mt-3">Agendar</button>
-      </form>
-      <p id="respuesta-form" class="mt-4 text-success fw-bold" style="display:none;">✅ Reunión agendada correctamente</p>
-    </section>
+<section id="agendar" class="agendar-section py-5 mb-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Agenda tu reunión</h2>
+    <p class="section-subtitle mb-5">Completá tus datos y reservá tu lugar en pocos segundos</p>
+    
+    <form id="form-agenda" class="agendar-form mx-auto">
+      <div class="input-group-custom">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+      </div>
+      <div class="input-group-custom">
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      </div>
+      <div class="input-group-custom">
+        <input type="text" id="calendario" name="fecha_hora" placeholder="Seleccioná día y hora" required>
+      </div>
+      <button type="submit" class="btn btn-cta mt-4">Agendar llamada</button>
+    </form>
+
+    <p id="respuesta-form" class="form-success mt-4">✅ Reunión agendada correctamente</p>
+  </div>
+</section>
+
 
     <!-- ¿Por qué elegir Milozzfit? (integrado más arriba o dejar al final como info breve) -->
     <section class="why-section" aria-labelledby="why-title" style="max-width: 900px; margin: 0 auto 4rem;">
