@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Rutina" ALTER COLUMN "dia" SET DATA TYPE TEXT;

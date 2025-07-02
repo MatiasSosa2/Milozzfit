@@ -1,0 +1,61 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/prisma"
+}
+
+model Usuario {
+  id          String    @id @default(uuid())
+  nombre      String
+  email       String    @unique
+  password    String
+  rol         Rol       @default(CLIENTE)
+  fechaInicio DateTime?
+  fechaFin    DateTime?
+
+  rutinas   Rutina[]
+  progresos Progreso[]
+}
+
+model Rutina {
+  id         String @id @default(uuid())
+  usuarioId  String
+  semana     Int
+  dia        Int
+  ejercicios String // JSON string de ejercicios
+
+  usuario Usuario @relation(fields: [usuarioId], references: [id])
+}
+
+model Progreso {
+  id         String   @id @default(uuid())
+  usuarioId  String
+  fecha      DateTime
+  completado Boolean
+
+  usuario Usuario @relation(fields: [usuarioId], references: [id])
+}
+
+model Ejercicio {
+  id          String @id @default(uuid())
+  nombre      String
+  zona        Zona
+  descripcion String
+  videoLink   String
+}
+
+enum Rol {
+  ADMIN
+  CLIENTE
+}
+
+enum Zona {
+  CALENTAMIENTO
+  TREN_SUPERIOR
+  TREN_INFERIOR
+  ZONA_MEDIA
+}
