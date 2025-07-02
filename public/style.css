@@ -391,7 +391,7 @@
   
 /* Hero */
 .hero-section {
-  min-height: 90vh;
+  min-height: 60vh;
   background: linear-gradient(180deg, rgba(240, 28, 0, 0.85) 30%, rgba(18, 18, 18, 0.9) 90%), url('Imagenes/Lucas.jpeg') center/cover no-repeat fixed;
   display: flex;
   align-items: center;
@@ -670,16 +670,13 @@ footer a:focus {
   margin-bottom: -20px;
  }
 
- .benefits-section {
-  margin-top: -50px;
- }
 }
 
 
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .hero-text h1 {
