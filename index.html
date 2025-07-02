@@ -19,42 +19,49 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="root"></div>
   <!-- Navbar simplificada -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-3 text-uppercase" href="#">MILOZZFIT</a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
-        <ul class="navbar-nav gap-3 align-items-center">
-          <li class="nav-item">
-            <a href="/login" target="_blank" class="btn btn-outline-light">Entrar a la Plataforma</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3 sticky-top">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="navbar-brand-wrapper d-flex flex-column align-items-start">
+      <span class="brand-name-navbar">MILOZZFIT</span>
+      <div class="red-line-navbar" aria-hidden="true"></div>
     </div>
-  </nav>
+    <a href="/login" target="_blank" class="btn btn-outline-light">Entrar a la Plataforma</a>
+  </div>
+</nav>
+
+
 
   <!-- Hero principal simplificado -->
-  <section class="video-section text-white d-flex flex-column align-items-center justify-content-center">
-    <div class="container text-center position-relative">
-      <h1 class="brand-name">MILOZZFIT</h1>
-      <div class="red-line" aria-hidden="true"></div>
-      <p class="lead highlight">
-        <strong>Transformá tu cuerpo y mente en 90 días</strong> con un método exclusivo, 100% virtual y seguimiento real.
-      </p>
-      <div class="video-wrapper mb-5">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" title="Video Milozzfit" allowfullscreen></iframe>
-        </div>
+<section class="video-section text-white d-flex flex-column align-items-center justify-content-center">
+  <div class="container text-center position-relative">
+
+    <!-- NUEVO texto encima -->
+    <p class="top-subtext">
+      <span class="text-highlight">CUPOS LIMITADOS</span> || 
+      <span class="text-muted-sub">Programa exclusivo para profesionales, emprendedores o empresarios</span>
+    </p>
+
+    <!-- Frase principal -->
+    <p class="lead highlight">
+      <strong>Transformá tu cuerpo y mente en 90 días</strong> con un método exclusivo, 100% virtual y seguimiento real.
+    </p>
+
+    <!-- Frase debajo como prueba social -->
+    <p class="proof-text">Ya hay personas haciendo el cambio. Es posible. Vos también podés.</p>
+
+    <div class="video-wrapper mb-5">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" title="Video Milozzfit" allowfullscreen></iframe>
       </div>
-      <h2 class="urgent-message">Solo para personas decididas a cambiar su vida.</h2>
-      <a href="#agendar" class="btn btn-cta">Reservá tu lugar ahora</a>
     </div>
-    <div class="decorative-lines"></div>
-  </section>
+
+    <h2 class="urgent-message">Solo para personas decididas a cambiar su vida.</h2>
+    <a href="#agendar" class="btn btn-cta">Reservá tu lugar ahora</a>
+  </div>
+  <div class="decorative-lines"></div>
+</section>
+
 
   <!-- Hero con beneficios tangibles -->
   <main>
