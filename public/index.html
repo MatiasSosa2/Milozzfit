@@ -151,26 +151,58 @@
     <section class="clients-transformation-section" aria-labelledby="clientes-transformacion" style="background-color: #111; color: white; padding: 4rem 0;">
       <div class="container">
         <h2 id="clientes-transformacion" class="text-center mb-5" style="color: #f01c00; font-weight: 900;">Transformaciones Reales de Nuestros Clientes</h2>
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-4">
-            <div class="card bg-dark text-white h-100 shadow" style="border-radius: 15px;">
-              <img src="Imagenes/alumno1-antes.jpg" class="card-img-top" alt="Cliente 1 antes">
-              <div class="card-body">
-                <h5 class="card-title">Matias Sosa</h5>
-                <p class="card-text">"Gracias a este programa, recuperé mi energía y confianza en solo 3 meses."</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-dark text-white h-100 shadow" style="border-radius: 15px;">
-              <img src="Imagenes/alumno2-antes.jpg" class="card-img-top" alt="Cliente 2 antes">
-              <div class="card-body">
-                <h5 class="card-title">Ian Matias</h5>
-                <p class="card-text">"Entrenar con Milozzfit cambió mi vida, no solo físicamente sino mentalmente."</p>
-              </div>
-            </div>
-          </div>
+<div id="carouselClientes" class="carousel slide d-md-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card bg-dark text-white shadow" style="border-radius: 15px;">
+        <img src="Imagenes/alumno1-antes.jpg" class="card-img-top" alt="Cliente 1 antes">
+        <div class="card-body">
+          <h5 class="card-title">Matias Sosa</h5>
+          <p class="card-text">"Gracias a este programa, recuperé mi energía y confianza en solo 3 meses."</p>
         </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card bg-dark text-white shadow" style="border-radius: 15px;">
+        <img src="Imagenes/alumno2-antes.jpg" class="card-img-top" alt="Cliente 2 antes">
+        <div class="card-body">
+          <h5 class="card-title">Ian Matias</h5>
+          <p class="card-text">"Entrenar con Milozzfit cambió mi vida, no solo físicamente sino mentalmente."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Flechas -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselClientes" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselClientes" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+<!-- Grilla visible solo en desktop -->
+<div class="row g-4 justify-content-center d-none d-md-flex">
+  <div class="col-md-4">
+    <div class="card bg-dark text-white h-100 shadow" style="border-radius: 15px;">
+      <img src="Imagenes/alumno1-antes.jpg" class="card-img-top" alt="Cliente 1 antes">
+      <div class="card-body">
+        <h5 class="card-title">Matias Sosa</h5>
+        <p class="card-text">"Gracias a este programa, recuperé mi energía y confianza en solo 3 meses."</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card bg-dark text-white h-100 shadow" style="border-radius: 15px;">
+      <img src="Imagenes/alumno2-antes.jpg" class="card-img-top" alt="Cliente 2 antes">
+      <div class="card-body">
+        <h5 class="card-title">Ian Matias</h5>
+        <p class="card-text">"Entrenar con Milozzfit cambió mi vida, no solo físicamente sino mentalmente."</p>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
 

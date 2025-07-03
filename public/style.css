@@ -391,13 +391,14 @@
   
 /* Hero */
 .hero-section {
-  min-height: 60vh;
+  min-height: 65vh;
   background: linear-gradient(180deg, rgba(240, 28, 0, 0.85) 30%, rgba(18, 18, 18, 0.9) 90%), url('Imagenes/Lucas.jpeg') center/cover no-repeat fixed;
   display: flex;
   align-items: center;
   color: #fff;
   padding: 5rem 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-text h1 {
@@ -546,6 +547,18 @@
   margin-bottom: 1.5rem;
   color: #ccc;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Testimonios */
 .testimonials-section {
